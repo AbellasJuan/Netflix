@@ -5,14 +5,14 @@
 .featured--vertical{
     height: inherit;
     width: inherit;
-    background: linear-gradient(to top, black 10%, transparent 90%);
+    background: linear-gradient(to top, black 01%, transparent 90%);
 }
 
 
 .featured--horizontal{
     height: inherit;
     width: inherit;
-    background: linear-gradient(to right, black 30%, transparent 70%);
+    background: linear-gradient(to right, black 10%, transparent 70%);
 }
 
 .featured--name{
@@ -40,10 +40,50 @@
 
 .featured--seasons{
     display: inline-block;
-    
+}
+
+.featured--description{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999;
+    max-width: 45%;
 }
 
 .featured--genres{
     font-size: 18px;
 }
 
+.featured--buttons{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.featured--mylistbutton, 
+.featured--watchbutton {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    opacity: 1;
+    transition: all ease 0.2s;
+}
+
+.featured--mylistbutton:hover, 
+.featured--watchbutton:hover {
+    opacity: 0.7;
+}
+
+
+.featured--watchbutton {
+    background-color: #fff;
+    color: #000;
+}
+
+.featured--mylistbutton {
+    background-color: #333;
+    text-decoration: none;
+    color: #fff;
+}
