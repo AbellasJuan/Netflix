@@ -1,15 +1,13 @@
 .movieRow{
-    margin-bottom: 30px;
-    padding-left: 25px;
+    
+    margin-bottom: 20px;
+    padding-left: 20px;
 }
 
 .movieRow h2{
     border-radius: 10px;
     width: fit-content;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    padding: 3px 8px;
+    padding: 3px 5px;
 }
 
 .movieRow--listarea{

@@ -14,7 +14,7 @@ export default function FeaturedMovie({item}){
 
         <section className="featured" style={{
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            'background-repeat': 'no-repeat',
             backgroundImage: `url(https://image.tmdb.org/t/p/original${item.backdrop_path})`,
         }}>
             <div className="featured--vertical">
