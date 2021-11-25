@@ -4,6 +4,7 @@ import MovieRow from './components/MovieRow.js';
 import '../src/css/App.css';
 import FeaturedMovie from './components/FeaturedMovie.js';
 import Header from './components/Header.js';
+import styled from 'styled-components';
 
 export default function App() { 
 
@@ -54,7 +55,19 @@ export default function App() {
             <MovieRow key={key} title={item.title} items={item.items}/>
           ))}
         </section>
+        <Footer>
+            Direitos de imagem para Netflix<br/>
+            Dados pegos do site Themoviedb.org
+        </Footer>
       </div>
     );
     
 };
+
+const Footer = styled.div`
+  width: 100vw;
+  text-align: center;
+  font-size: 10px;
+  line-height: 20px;
+  padding-bottom: 40px;
+`
