@@ -1,12 +1,11 @@
 .featured{
     height: 100vh;
-    margin-bottom: -200px;
+    margin-bottom: -150px;
 }
 
 .featured--vertical{
-   
     height: inherit;
-    width: inherit;
+    width: 100%;
     background: linear-gradient(to top, black 1%, transparent 80%);
 }
 
@@ -21,9 +20,10 @@
 }
 
 .featured--name{
-    font-size: 70px;
+    font-size: 60px;
     font-weight: bold;
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 
 .featured--info{
@@ -53,8 +53,8 @@
     margin-top: 15px;
     font-size: 18px;
     color: #999;
-    min-width: 450px;
-    max-width: 40vw;
+    min-width: 400px;
+    max-width: 50vw;
     padding-bottom: 20px;
 }
 
