@@ -5,7 +5,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 export default function MovieRow ({title, items}){
 
-    const [scrollX, setScrollX] = useState(-350);
+    const [scrollX, setScrollX] = useState(-3);
 
     const handleLeftArrow = () => {
         let x = scrollX + Math.round(window.innerWidth / 2);
@@ -17,7 +17,7 @@ export default function MovieRow ({title, items}){
 
     const handleRightArrow = () => {
         let x = scrollX - Math.round(window.innerWidth / 2);
-        let listWidth = items.results.length * 213;
+        let listWidth = items.results.length * 203;
 
         if((window.innerWidth - listWidth) > x){
             x = (window.innerWidth - listWidth);
@@ -42,7 +42,7 @@ export default function MovieRow ({title, items}){
             <div className="movieRow--listarea">
                 <div className="movieRow--list" style={{
                         marginLeft: scrollX,
-                        width: items.results.length * 250,
+                        width: items.results.length * 219,
                         transition: 'all ease 0.6s',
                 }}>
                     {items.results.length > 0 && items.results.map((item, key)=>(

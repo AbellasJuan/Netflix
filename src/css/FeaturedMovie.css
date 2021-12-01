@@ -1,7 +1,7 @@
 .featured{
     height: 100vh;
-    width: 100vw;
-  overflow: hidden;
+    width: 100%;
+    overflow: hidden;
     margin-bottom: -150px;
 }
 

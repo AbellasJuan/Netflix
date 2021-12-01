@@ -7,23 +7,25 @@
 .movieRow h2{
     border-radius: 10px;
     font-size: 25px;
-    padding: 4px 8px;
-}
-
-.movieRow--listarea{
-    overflow-x: hidden;
-    overflow: hidden;
+    
 }
 
 .movieRow--item{
     display: inline-block;
-    width: 210px;
+    width: 200px;
+    height: 300px;
     overflow: hidden;
+}
+
+.movieRow--item img{
+    width: 200px;
+    height: 300px;
 }
 
 .movieRow--list .movieRow--item img{
     transform: scale(0.9);
     transition: all ease 0.4s;
+    height: 300px;
     cursor: pointer;
     overflow: hidden;
 }
@@ -58,10 +60,8 @@
 .movieRow--left{
     padding-left: 20px;
     left: 0;
-    overflow: hidden;
 }
 
 .movieRow--right{
     right: 0;
-    overflow: hidden;
 }
