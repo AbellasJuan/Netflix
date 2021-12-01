@@ -23,7 +23,7 @@ export default function App() {
       let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length -1));
       let chosen = originals[0].items.results[randomChosen];
       let chosenInfo = await Tmdb.getMovieInfo(chosen.id, 'tv');
-      console.log(chosenInfo)
+      
       setFeaturedData(chosenInfo);
     }
 
@@ -59,15 +59,22 @@ export default function App() {
             Direitos de imagem para Netflix<br/>
             Dados pegos do site Themoviedb.org
         </Footer>
+
+        {movieList.length <= 0 &&    
+            <div className="loading">
+              <img src="https://64.media.tumblr.com/280c10ef121ea37d973fcc035cf62222/tumblr_mvdumiXwAe1qmxr4zo1_400.gif" alt="Carregando" />
+            </div>
+        }
+
       </div>
     );
     
 };
 
-const Footer = styled.div`
-  width: 100vw;
+const Footer = styled.div`  
   text-align: center;
   font-size: 10px;
   line-height: 20px;
   padding-bottom: 40px;
+  overflow: hidden;
 `

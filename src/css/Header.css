@@ -1,15 +1,14 @@
 header{
     height: 70px;
-    width: 100%;
+    overflow: hidden;
     position: fixed;
-    background-color: black;
     top: 0;
     left: 0;
     right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    padding: 17px;
     z-index: 999;
     background: transparent;
     transition: all ease 0.5s;
@@ -17,13 +16,16 @@ header{
 
 header.black {
     background-color:black;
+    overflow: hidden;
 }
 
 .header--logo img{
+    overflow: hidden;
     height: 90px;
 }
 
 .header--user img{
     height: 50px;
     border-radius: 3px;
+    overflow-x: hidden;
 }

@@ -1,35 +1,67 @@
 .movieRow{
-    
+    overflow: hidden;
     margin-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 .movieRow h2{
     border-radius: 10px;
-    width: fit-content;
-    padding: 3px 5px;
+    font-size: 25px;
+    padding: 4px 8px;
 }
 
 .movieRow--listarea{
     overflow-x: hidden;
-}
-
-.movieRow--list{
-    width: 99999999999px;
+    overflow: hidden;
 }
 
 .movieRow--item{
     display: inline-block;
     width: 210px;
+    overflow: hidden;
 }
 
 .movieRow--list .movieRow--item img{
     transform: scale(0.9);
     transition: all ease 0.4s;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .movieRow--item img:hover{
     transform: scale(1) ;
     transition: all ease 0.3s;
+    overflow: hidden;
+}
+
+.movieRow--left, 
+.movieRow--right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 45px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.9s;
+}
+
+.movieRow:hover .movieRow--left , 
+.movieRow:hover .movieRow--right{
+    opacity: 1;
+}
+
+.movieRow--left{
+    padding-left: 20px;
+    left: 0;
+    overflow: hidden;
+}
+
+.movieRow--right{
+    right: 0;
+    overflow: hidden;
 }
